@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script>
+        function render(){
+            document.getElementById("render").innerHTML='<object type="text/html" data="portfolio.html">hukum</object>'
+
+        }
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <title>Resume - Karthikeyan S</title>
+    <style>
+        html{
+            font-family: "Montserrat", sans-serif;
+            background-image: url("images/bg2.jpg");
+        }
+        body {
+            
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            background-color: #fff;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1, h2, h3 {
+            color: #333;
+        }
+        h1 {
+            border-bottom: 2px solid #333;
+            padding-bottom: 10px;
+        }
+        .section {
+            margin-bottom: 20px;
+        }
+        .skills-list {
+            list-style: none;
+            padding: 0;
+        }
+        .skills-list li {
+            margin: 5px 0;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Karthikeyan S</h1>
+        <h3>Full Stack Developer| Mechanical Engineer</h3>
+        <p>Chennai | 8072034620 | 
+           <a href="mailto: ping2karti@gmail.com">ping2karti@gmail.com</a> <br> 
+           <a href="https://www.linkedin.com/in/karthikeyan-sankar-422703251/ ">Linkedin</a> 
+           <a href="https://github.com/Kartikn-code?tab=repositories">GitHub</a></p>
+
+        <div class="section">
+            <h2>Summary</h2>
+            <p>
+                A highly motivated Full Stack Developer with a background in mechanical engineering, proficient in both front-end and back-end technologies. Skilled in building responsive web applications with modern frameworks, ensuring seamless user experience and efficient server-side processing. Passionate about solving complex problems and continuously learning new technologies.
+            </p>
+        </div>
+
+        <div class="section">
+            <h2>Technical Skills</h2>
+            <h3>Front-End:</h3>
+            <ul class="skills-list">
+                <li>HTML5, CSS3, JavaScript, </li>
+                <li>React.js</li>
+                <li>Bootstrap,</li>
+                <li>Responsive Web Design, UX/UI Principles</li>
+            </ul>
+
+            <h3>Back-End:</h3>
+            <ul class="skills-list">
+                <li>Java</li>
+                <li>Python (Django)</li>
+            </ul>
+
+            <h3>Database Management:</h3>
+            <ul class="skills-list">
+                <li>MySQL, MongoDB</li>
+                <li>SQL, NoSQL</li>
+            </ul>
+
+            <h3>Version Control & Collaboration:</h3>
+            <ul class="skills-list">
+                <li>Git, GitHub, GitLab</li>
+            </ul>
+            <h3>Projects</h3>
+            <ul class="projects">
+                <li>Musclenation</li>
+                <a href="http://127.0.0.1:8000/login/">Project Link</a>
+                <li>Stopwatch</li>
+                <a href="file:///Users/mac/Documents/web-dev/%23%20prodigy_infotech/stopwatch(WD_02)/index.html">Project Link</a>
+                <li>Tic-tac-Toe</li>
+                <a href="file:///Users/mac/Documents/web-dev/%23%20prodigy_infotech/tick%20tac%20toe%20(WD_03)/firstpage.html">Project Link</a>
+            </ul>
+        </div>
+    </div>
+    <div>
+        <button id="render" onclick="render()">render</button>
+    </div>
+
+</body>
+</html>

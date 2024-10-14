@@ -1,0 +1,206 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+html{
+    background-image: url(bg3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+nav {
+    background-color: #333;
+    color: #fff;
+    padding: 1em;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: #ccc;
+}
+
+
+
+
+
+
+#projects {
+    padding: 2em;
+}
+
+.project {
+    margin-bottom: 20px;
+}
+
+.project img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.project h2 {
+    font-size: 24px;
+    margin-top: 10px;
+}
+
+#skills {
+    padding: 2em;
+}
+
+#skills ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+#skills li {
+    margin-bottom: 10px;
+}
+
+#contact {
+    padding: 2em;
+}
+
+#contact form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#contact input, #contact textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0}
+
+    body{
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    background-color: #333;
+    color: #fff;
+    padding: 1em;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: #ccc;
+}
+
+
+
+
+#projects {
+    padding: 2em;
+    background-image: url('projects-background.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.project {
+    margin-bottom: 20px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.project img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.project h2 {
+    font-size: 24px;
+    margin-top: 10px;
+}
+
+#skills {
+    padding: 2em;
+    background-image: url('skills-background.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+#skills ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+#skills li {
+    margin-bottom: 10px;
+}
+
+#contact {
+    padding: 2em;
+    background-image: url('contact-background.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+#contact form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#contact input, #contact textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+div.about{
+    display: block;
+    color: whitesmoke;
+
+}
+div.welcome{
+    color: whitesmoke;
+    font-family: "Montserrat", sans-serif;
+}
