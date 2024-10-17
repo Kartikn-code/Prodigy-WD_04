@@ -14,12 +14,8 @@ document.querySelector('.hero button').addEventListener('click', event => {
     aboutMeSection.scrollIntoView({ behavior: 'smooth' });
 });
 
-$(document).ready(function(){
-    setTimeout(function(){
-        $('#imagepopup').css('display','block');
-    },2000)
-}
-    
-    
-);
+var popup=document.querySelector('.popup');
+var login=document.querySelector('.login').addEventListener('click',()=>{
+    popup.style.display="none";
+})
 

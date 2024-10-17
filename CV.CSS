@@ -229,7 +229,7 @@ button:hover::before{
     font-family: "DM Sans", sans-serif;
 }
 .pics{
-    animation: animate 10s linear infinite;
+    animation: animate 7s linear infinite;
     width: 50%;
     position: relative;
     animation-delay: -2s;
@@ -239,7 +239,7 @@ button:hover::before{
 }
 .pics img {
     display: flex;
-    
+    position: absolute;
     background-color: #f5f5f5;
     border-radius: 10px 0 200px;
     filter: grayscale(100%);
@@ -248,21 +248,23 @@ button:hover::before{
 }
 
 @keyframes animate {
-    20%{
+    0%{
         background-image:url("images/coding.jpg");
+        opacity: 0.7;
         
     }
-    40%{
-        background-image:url("images/coding2.jpg")
+    
+    30%{
+        background-image:url("images/mech1.jpg") ;
+        opacity: 0.7;  
     }
-    70%{
-        background-image:url("images/mech1.jpg")    
-    }
-    80%{
+    60%{
             background: url("images/coding3.jpeg");
+            opacity: 0.7;
         }
     100%{
             background-image: url("images/coding4.jpeg");
+            opacity: 0.7;
         }
     }
 
