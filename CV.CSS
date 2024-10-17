@@ -8,10 +8,7 @@
 }
 
 
-.portfolio{
-    
-    border-radius: 60px 70px 40px 140px;
-}
+
 .portfolio:hover{
     background:linear-gradient(to bottom, #444,#ccc,#fff);
     transition: all 1s ease-in-out;
@@ -70,7 +67,8 @@ button:hover::before{
     position: absolute;
     width: 100%;
     height: 2.5px;
-    background: cyan;
+    
+    background:linear-gradient(to bottom,#000,#ccc,#fff);
     border-radius: 5px;
     padding: .2px;
     bottom: 0;
@@ -100,6 +98,7 @@ button:hover::before{
 
 .link.active a {
     color: #ccc;
+    padding: 3px;
 }
 .link:hover{
     
@@ -215,7 +214,7 @@ button:hover::before{
     
 }
 .theory h3{
-    margin-left: 150px;
+    margin-left: 200px;
    text-shadow: 0 0 40px #000;
     font-size: 30px;
     font-weight:700 700; ;
@@ -228,6 +227,8 @@ button:hover::before{
     font-weight: 700;
     font-size: 20px;
     font-family: "DM Sans", sans-serif;
+    margin-left: 100px;
+    text-align:justify;
 }
 .pics{
     animation: animate 7s linear infinite;
@@ -341,6 +342,81 @@ button:hover::before{
     position: absolute;
     width: max-content;
 }
+.logos{
+    
+    display: flex;
+    border: #111;
+    backdrop-filter: blur(30px);
+    padding: 30px;
+    width: max-content;
+    
+    border-radius: 20px;
+    gap: 10px;
+}
+.contact h2{
+    font-weight: 800;
+    font-size: 30px;
+    justify-items: center;
+    text-align: center;
+}
+.blank p{
+    font-size: 20px;
+    justify-items: center;
+    text-align: center;
+
+}
+.blank{
+    width: 100%;
+    height: max-content;
+    background-color: white;
+    padding: 20px;
+
+}
+.svg{
+    width: 50px;
+    height: 50px;
+}
+.blank .logos{
+    bottom: 0px;
+    margin-top: 20px;
+   margin-left: 400px;
+}
+.blank ul img{
+    background:transparent;
+   
+    justify-content: center;
+   
+    text-align: center;
+    padding: 20px;
+    width: 70px;
+    height: 70px;
+    display: flex;
+}
+.social{
+    position: relative;
+}
+ .social::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2.5px;
+    border-radius: 10px;
+    background:linear-gradient(to bottom,#000,#ccc,#fff);
+    padding: 2px;
+    transition: all .5s ease;
+    transform: scaleX(0);
+    right: 0;
+    bottom: 0;
+}
+ .social:hover::before{
+    transform: scaleX(1);
+}
+.blank li:hover{
+    transform: translate(10px, -10px);
+    border-radius: 100%;
+    transition: all .5s ease;
+    transition-delay: .1s;
+}
 
 .togglepopup{
     width: 100%;
@@ -376,14 +452,17 @@ div.popup{
     
     border-radius: 15px;
     display: flex;
+    height: fit-content;
+    width: 70px;
     flex-direction: column;
-    margin-top: 40px;
+    margin-top: 20px;
     padding: 0px;
-    margin-left: 1220px;
+    left: 0;
+    top: 190px;
     gap: 1rem;
     background-color: black;
     backdrop-filter: blur(20px);
-    filter: brightness(200%);
+   
     box-shadow: inset 0 0 20px rgba(255, 255, 255, 0.192),
       inset 0 0 5px rgba(255, 255, 255, 0.274), 0 5px 5px rgba(0, 0, 0, 0.164);
     transition: 0.5s;
@@ -393,22 +472,21 @@ div.popup{
   
   .card:hover {
     animation: ease-out 5s;
-    background-color: #2d16ae6b;
+    background-color: #111;
+    filter: brightness(400%);
+    color: white;
   }
   
   .card ul {
     padding: 1rem;
     display: flex;
-   
     list-style: none;
     gap: 1rem;
     align-items: center;
-    justify-content: center;
+    justify-content: center; 
     align-content: center;
-    
-  align-content: center;
-  flex-wrap: wrap;
-  flex-direction: column;
+    flex-wrap: wrap;
+    flex-direction: column;
 }
     
   
@@ -421,13 +499,13 @@ div.popup{
     transition: all 0.3s;
     /* if you find some problems change w - h : 30px*/
     padding: 1rem;
-    height: 55px;
-    width: 55px;
+    height: 52px;
+    width: 52px;
     border-radius: 100%;
-    color: rgb(101, 34, 177);
+    color: rgb(4, 4, 4);
     fill: currentColor;
-    box-shadow: inset 0 0 20px rgba(255, 255, 255, 0.3),
-      inset 0 0 5px rgba(255, 255, 255, 0.5), 0 5px 5px rgba(0, 0, 0, 0.164);
+    box-shadow: inset 0 0 20px rgba(23, 182, 153, 0.551),
+      inset 0 0 5px rgba(200, 197, 50, 0.675), 0 5px 5px rgba(0, 0, 0, 0.164);
   }
   
   .text {
@@ -440,10 +518,10 @@ div.popup{
     background-color: rgba(255, 255, 255, 0.3);
     position: absolute;
     z-index: 9999;
-    box-shadow: -5px 0 1px rgba(153, 153, 153, 0.2),
+    box-shadow: -5px 0 1px rgba(123, 22, 22, 0.2),
       -10px 0 1px rgba(153, 153, 153, 0.2),
-      inset 0 0 20px rgba(255, 255, 255, 0.3),
-      inset 0 0 5px rgba(255, 255, 255, 0.5), 0 5px 5px rgba(0, 0, 0, 0.082);
+      inset 0 0 20px rgba(24, 131, 146, 0.3),
+      inset 0 0 5px rgba(190, 181, 193, 0.5), 0 5px 5px rgba(0, 0, 0, 0.082);
   }
   
   /*isometric prooyection*/
@@ -454,11 +532,7 @@ div.popup{
     transform: translate(15px, -15px);
     border-radius: 100%;
   }
-  
-  .iso-pro:hover .text {
-    opacity: 1;
-    transform: translate(25px, -2px) skew(-5deg);
-  }
+ 
   
   .iso-pro:hover .svg {
     transform: translate(5px, -5px);
