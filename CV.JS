@@ -14,8 +14,15 @@ document.querySelector('.hero button').addEventListener('click', event => {
     aboutMeSection.scrollIntoView({ behavior: 'smooth' });
 });
 
+
 var popup=document.querySelector('.popup');
+var togglepopup=document.querySelector('.togglepopup');
 var login=document.querySelector('.login').addEventListener('click',()=>{
+    popup.style.display="block";
+    togglepopup.style.display="block";
+});
+var cancel=document.querySelector(".cancel").addEventListener('click',()=>{
     popup.style.display="none";
-})
+    togglepopup.style.display="none";
+});
 

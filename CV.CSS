@@ -72,6 +72,7 @@ button:hover::before{
     height: 2.5px;
     background: cyan;
     border-radius: 5px;
+    padding: .2px;
     bottom: 0;
     left: 0;
     gap: 10px;
@@ -247,6 +248,8 @@ button:hover::before{
     float: right;
 }
 
+
+
 @keyframes animate {
     0%{
         background-image:url("images/coding.jpg");
@@ -339,3 +342,156 @@ button:hover::before{
     width: max-content;
 }
 
+.togglepopup{
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    display: none;
+    opacity: 0.4;
+    background-color: black;
+   
+    border-radius: 20px;
+    
+}
+div.popup{
+    display: none;
+    border: 2px solid orangered;
+    position: relative;
+    border-radius: 20px;
+    width: 200px;
+    height: 200px;
+}
+.login{
+    display: block;
+    border-radius: 20px;
+    text-align: center;
+    justify-content: center;
+}
+
+ /* uiverse-code*/
+ /* From Uiverse.io by MijailVillegas */ 
+.card {
+    
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+    padding: 0px;
+    margin-left: 1220px;
+    gap: 1rem;
+    background-color: black;
+    backdrop-filter: blur(20px);
+    filter: brightness(200%);
+    box-shadow: inset 0 0 20px rgba(255, 255, 255, 0.192),
+      inset 0 0 5px rgba(255, 255, 255, 0.274), 0 5px 5px rgba(0, 0, 0, 0.164);
+    transition: 0.5s;
+    position:fixed;
+    
+  }
+  
+  .card:hover {
+    animation: ease-out 5s;
+    background-color: #2d16ae6b;
+  }
+  
+  .card ul {
+    padding: 1rem;
+    display: flex;
+   
+    list-style: none;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    
+  align-content: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+    
+  
+  
+  .card ul li {
+    cursor: pointer;
+  }
+  
+  .svg {
+    transition: all 0.3s;
+    /* if you find some problems change w - h : 30px*/
+    padding: 1rem;
+    height: 55px;
+    width: 55px;
+    border-radius: 100%;
+    color: rgb(101, 34, 177);
+    fill: currentColor;
+    box-shadow: inset 0 0 20px rgba(255, 255, 255, 0.3),
+      inset 0 0 5px rgba(255, 255, 255, 0.5), 0 5px 5px rgba(0, 0, 0, 0.164);
+  }
+  
+  .text {
+    opacity: 0;
+    border-radius: 5px;
+    font-weight: bold;
+    padding: 5px;
+    transition: all 0.3s;
+    color: rgb(0, 0, 0);
+    background-color: rgba(255, 255, 255, 0.3);
+    position: absolute;
+    z-index: 9999;
+    box-shadow: -5px 0 1px rgba(153, 153, 153, 0.2),
+      -10px 0 1px rgba(153, 153, 153, 0.2),
+      inset 0 0 20px rgba(255, 255, 255, 0.3),
+      inset 0 0 5px rgba(255, 255, 255, 0.5), 0 5px 5px rgba(0, 0, 0, 0.082);
+  }
+  
+  /*isometric prooyection*/
+  .iso-pro {
+    transition: 0.5s;
+  }
+  .iso-pro:hover a > .svg {
+    transform: translate(15px, -15px);
+    border-radius: 100%;
+  }
+  
+  .iso-pro:hover .text {
+    opacity: 1;
+    transform: translate(25px, -2px) skew(-5deg);
+  }
+  
+  .iso-pro:hover .svg {
+    transform: translate(5px, -5px);
+  }
+  
+  .iso-pro span {
+    opacity: 0;
+    position: absolute;
+    color: #1877f2;
+    border-color: #1877f2;
+    box-shadow: inset 0 0 20px rgba(255, 255, 255, 0.3),
+      inset 0 0 5px rgba(111, 54, 54, 0.5), 0 5px 5px rgba(0, 0, 0, 0.164);
+    border-radius: 50%;
+    transition: all 0.3s;
+    height: 60px;
+    width: 60px;
+  }
+  
+  .iso-pro:hover span {
+    opacity: 1;
+  }
+  
+  .iso-pro:hover span:nth-child(1) {
+    opacity: 0.2;
+  }
+  
+  .iso-pro:hover span:nth-child(2) {
+    opacity: 0.4;
+    transform: translate(5px, -5px);
+  }
+  
+  .iso-pro:hover span:nth-child(3) {
+    opacity: 0.6;
+    transform: translate(10px, -10px);
+  }
+  
