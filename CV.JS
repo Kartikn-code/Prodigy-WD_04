@@ -44,6 +44,7 @@ var cancel1=document.querySelector('.cancel1').addEventListener('click',()=>{
     blackdisplay.style.display='block';
    
    
+   
 })
 var div2popup=document.querySelector('.popup2').addEventListener('click',()=>{
     popup1.style.display='block';
