@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
    
+   
 
    
 }
@@ -281,36 +282,29 @@ button:hover::before{
 }
 
 .projects {
-    padding: 2rem;
-    background: transparent;
+    padding: 40px;
+    width: 100%;
+    height: 100%;
     backdrop-filter: blur(30px);
     background-image: linear-gradient(to bottom, #333, #666,#111);
     border-radius: 150px 0 0px 0px;
-}
-
-.projects ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+   
+   
 }
 
-.projects li {
-    margin: 20px;
-}
+
+
 
 .projects img {
-    width: 100%;
-    height: 150px;
-    object-fit: cover;
+    width: 300px;
+    margin-top: 30px;
+    height: 300px;
+    
     border-radius: 10px;
 }
 
-.projects h3 {
-    margin-top: 10px;
-}
+
 
 .contact {
     padding: 2rem;
@@ -362,24 +356,186 @@ button:hover::before{
 .blank p{
     font-size: 20px;
     justify-items: center;
-    text-align: center;
+    text-align: center;}
+    .blank {
+        width: 220px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color: rgb(255, 255, 255);
+        padding: 30px 30px 30px 30px;
+        box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.062);
+        position: relative;
+        overflow: hidden;
+      }
+      
+      .blank::before {
+        position: absolute;
+        content: "";
+        width: 400px;
+        height: 200px;
+        background-color: rgb(209, 193, 255);
+        transform: rotate(245deg);
+        left: -240px;
+        bottom: 30px;
+        z-index: 1;
+        border-radius: 30px;
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.082);
+      }
+      
 
-}
 .blank{
     width: 100%;
     height: max-content;
     background-color: white;
     padding: 20px;
+   
 
 }
 .svg{
     width: 50px;
     height: 50px;
 }
+.blackdisplay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: white;
+    width: 100%;
+    height: 100%;
+    opacity: 0.4;
+    display: none;
+    border-radius: 150px 0 0px 0px;
+}
+.pro{
+    width: 50%;
+    height: 100%;
+    gap: 20px;
+    left: 10px;
+    margin-top: 0;
+    text-align: justify;
+    justify-content: center;
+    padding: 20px;
+    box-shadow: 20px 10px 140px solid cyan;
+}
+.popup1,.popup2,.popup3{
+    margin-left: 20px;
+    text-shadow: 0px 10px 20px black;
+    justify-content: center;
+    text-align: center;
+}
+.prohero{
+    width: 100%;
+    height: 550px;
+    box-shadow: 0 0 60px #444;
+    justify-items: center;
+    text-align: center;
+    padding: 20px;
+}
+.prohero h3{
+    text-align: center;
+}
+
+    .pro1-para{
+        display: none;
+        position: absolute;
+        margin-top: 20px;
+        top: 10px;
+        left:370px;
+         border: 2px solid #6b679d6b;
+         background-color: black;
+         color: white;
+         border-radius: 20px;
+         text-align: justify;
+         font-size: 20px;
+         padding: 20px;
+         width: 700px;
+         height: auto;
+         filter: brightness(100%);
+
+    }
+    .title{
+        color: white;
+        text-overflow: 0 0 40px black;
+        margin-left: 20px;
+        font-size: 25px;
+        justify-content:center;
+        text-align: justify;
+    }
+    
+    .pro1-para img{
+        
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-left: 0px;
+        
+    }
+    .pro2-para{
+        display: none;
+        position: absolute;
+        margin-top: 20px;
+        top: 10px;
+        left:370px;
+         border: 2px solid #6b679d6b;
+         background-color: black;
+         color: white;
+         border-radius: 20px;
+         text-align: justify;
+         font-size: 20px;
+         padding: 20px;
+         width: 700px;
+         height: auto;
+         filter: brightness(100%);
+        
+    }
+    .pro2-para img{
+        
+        width: 350px;
+        height:150px;
+        margin-left: 180px;
+        
+    }
+    .pro3-para{
+        display: none;
+        position: absolute;
+        margin-top: 20px;
+        top: 10px;
+        left:370px;
+         border: 2px solid #6b679d6b;
+         background-color: black;
+         color: white;
+         border-radius: 20px;
+         text-align: justify;
+         font-size: 20px;
+         padding: 10px;
+         width: 700px;
+         height: auto;
+         filter: brightness(100%);
+    }
+    .cancel{
+        margin-left: 200px;
+    }
+   
+
+.pro img{
+    border-radius: 20px;
+    
+    transition: all .5s ease;
+    scale: 0.8;
+    position: relative;
+}
+.pro img:hover{
+    box-shadow: 0 0 40px black ;
+    scale: 1;
+    
+}
 .blank .logos{
     bottom: 0px;
     margin-top: 20px;
-   margin-left: 400px;
+   
 }
 .blank ul img{
     background:transparent;
